@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Store</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">APEX</div>
+
+    <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search products...">
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+
+        <a href="cart.html" class="cart">
+            🛒
+            <span class="cart-count">0</span>
+        </a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="badge">New Release 2026</span>
+
+        <h1>
+            Shop Premium
+            <span>Collection</span>
+        </h1>
+
+        <p>
+            Discover premium quality products at affordable prices.
+        </p>
+
+        <button class="shop-btn">
+            Shop Now
+        </button>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="images/hero-image.png" alt="Hero Image">
+    </div>
+
+</section>
+
+<section class="products-section">
+
+    <h2>Our Products</h2>
+
+    <p id="productCount">
+        Loading Products...
+    </p>
+
+    <div class="product-grid" id="productContainer"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        APEX
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="cart-page">
+
+    <div class="cart-items">
+
+        <h2>
+            Shopping Cart
+        </h2>
+
+        <div id="cartContainer">
+
+        </div>
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h2>
+            Order Summary
+        </h2>
+
+        <div class="summary-row">
+
+            <span>Total Items</span>
+
+            <span id="totalItems">
+                0
+            </span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Total Price</span>
+
+            <span id="totalPrice">
+                $0
+            </span>
+
+        </div>
+
+        <hr>
+
+        <div class="summary-row total">
+
+            <span>Grand Total</span>
+
+            <span id="grandTotal">
+                $0
+            </span>
+
+        </div>
+
+        <button class="checkout-btn">
+
+            Proceed To Checkout
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

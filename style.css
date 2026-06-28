@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    font-weight:bold;
+}
+
+.product-details{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    gap:40px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:30px;
+}
+
+.product-image{
+    width:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.product-image img{
+    width:100%;
+    max-width:400px;
+    height:350px;
+    object-fit:contain;
+}
+
+.product-info{
+    width:60%;
+}
+
+.product-info h1{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.brand,
+.category,
+.rating,
+.price,
+.discount,
+.stock{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.price{
+    color:#2563eb;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.discount{
+    color:green;
+}
+
+.stock{
+    color:#0f9d58;
+}
+
+.description{
+    margin-top:20px;
+    line-height:1.7;
+    color:#555;
+}
+
+.button-group{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+}
+
+.add-cart{
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.buy-now{
+    padding:12px 25px;
+    background:#16a34a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.add-cart:hover{
+    background:#1d4ed8;
+}
+
+.buy-now:hover{
+    background:#15803d;
+}
+
+@media(max-width:900px){
+
+    .product-details{
+        flex-direction:column;
+    }
+
+    .product-image,
+    .product-info{
+        width:100%;
+    }
+
+    .product-image img{
+        max-width:300px;
+        margin:auto;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .add-cart,
+    .buy-now{
+        width:100%;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .product-info h1{
+        font-size:28px;
+    }
+
+    .brand,
+    .category,
+    .rating,
+    .price,
+    .discount,
+    .stock,
+    .description{
+        font-size:16px;
+    }
+
+}

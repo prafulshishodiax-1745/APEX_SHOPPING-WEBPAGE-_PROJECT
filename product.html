@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        APEX
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="product-details">
+
+    <div class="product-image">
+
+        <img id="productImage" alt="Product Image">
+
+    </div>
+
+    <div class="product-info">
+
+        <h1 id="productTitle"></h1>
+
+        <p class="brand">
+            <strong>Brand :</strong>
+            <span id="productBrand"></span>
+        </p>
+
+        <p class="category">
+            <strong>Category :</strong>
+            <span id="productCategory"></span>
+        </p>
+
+        <p class="rating">
+            <strong>Rating :</strong>
+            <span id="productRating"></span>/5
+        </p>
+
+        <p class="price">
+            <strong>Price :</strong>
+            <span id="productPrice"></span>
+        </p>
+
+        <p class="discount">
+            <strong>Discount :</strong>
+            <span id="productDiscount"></span>%
+        </p>
+
+        <p class="stock">
+            <strong>Stock :</strong>
+            <span id="productStock"></span>
+        </p>
+
+        <p class="description">
+            <strong>Description :</strong><br><br>
+            <span id="productDescription"></span>
+        </p>
+
+        <div class="button-group">
+
+            <button class="add-cart" onclick="addToCart()">
+                Add To Cart
+            </button>
+
+            <button class="buy-now">
+                Buy Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="product.js"></script>
+
+</body>
+</html>
